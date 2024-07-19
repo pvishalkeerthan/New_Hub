@@ -1,0 +1,429 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1; 
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgb(12, 188, 201);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: end;
+  justify-items: space-between;
+}
+
+/* Navbar link */
+.para {
+  color: black;
+  float: right;
+  padding: 0rem 1rem;
+  margin: auto;
+  bottom: 2px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.para:hover {
+  background-color: rgb(72, 9, 135);
+  color: white;
+  box-shadow: black 4px 4px;
+}
+
+/* Space */
+.space {
+  margin: auto;
+  margin-top: 6rem;
+}
+
+/* Common styles for containers */
+.common-box {
+  width: 300px;
+  margin: auto;
+  border-radius: 10%;
+  text-align: center;
+  padding: 0.5px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.inp-box,
+.inpLog-box,
+.button-box {
+  margin: auto;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+.reg {
+  height: 20px;
+  width: 200px;
+}
+
+.regRegisterBtn,
+.regRegisterBtn:hover,
+.bridge {
+  height: 25px;
+  width: 200px;
+  padding: 0px;
+}
+
+.regRegisterBtn {
+  margin-top: 10px;
+  background-color: rgb(24, 179, 19);
+}
+
+.regRegisterBtn:hover {
+  background-color: rgb(20, 149, 241);
+}
+
+/* Login and Registration boxes */
+.log-box,
+.reg-box {
+  height: 300px;
+  margin-top: 35vh;
+}
+
+.reg-box {
+  height: 400px;
+  margin-top: 30vh;
+}
+
+/* Login specific */
+.loginPara {
+  color: rgb(158, 19, 19);
+  margin-top: 1rem;
+}
+
+.loginPara:hover {
+  color: rgb(20, 14, 210);
+  border: 2px solid black;
+}
+
+/* Login and Register containers */
+.login-container,
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form,
+.register-form {
+  width: 350px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.login-header,
+.register-header {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.login-label,
+.register-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-input,
+.register-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.login-input:focus,
+.register-input:focus {
+  border-color: #007bff;
+}
+
+.login-button,
+.register-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover,
+.register-button:hover {
+  background-color: #0056b3;
+}
+
+.login-register-link,
+.register-login-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register-link,
+.login-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-link:hover,
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Categories */
+.categories_right .category {
+  background: var(--color-bg2);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: var(--transition);
+  height: 100%;
+  overflow: hidden;
+}
+
+.categories_right .category:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+
+.categories_right .category h5 {
+  margin: 0.5rem 0;
+}
+
+.categories_right .category p {
+  margin-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.categories_right .category {
+  height: 250px;
+}
+
+.categories_right .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 50px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.testimonials .card {
+  height: 100%;
+  margin-bottom: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials .card-title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.testimonials .card-text {
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+/* Footer */
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer hr {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .quotes p,
+.footer .footer-text p {
+  margin: 10px 0;
+}
+
+.footer .footer-text {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  font-size: 1.25rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.login-input {
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Additional Styling for Better Look */
+
+.footer-content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.footer .quotes {
+  margin-bottom: 20px;
+}
+
+.footer .footer-text p {
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column; 
+}
+
+.content {
+  flex: 1; 
+}
+
+/* Footer */
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  flex-shrink: 0; 
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.footer hr {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .quotes p,
+.footer .footer-text p {
+  margin: 10px 0;
+}
+
+.footer .footer-text {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  font-size: 1.25rem;
+}
+
+/*About*/
+.about {
+  padding: 40px 0;
+}
+
+.about-header {
+  margin-bottom: 40px;
+}
+
+.team-members .member {
+  text-align: center;
+}
+
+.team-members .member img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.team-members .member .details {
+  margin-top: 20px;
+}
+
+
+.star-selected {
+  color: #ffc107;
+  cursor: pointer; 
+  font-size: 1.5em; 
+}
+
+.star-unselected {
+  color: #ccc; 
+  cursor: pointer;
+  font-size: 1.5em;
+}
